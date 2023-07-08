@@ -1,9 +1,9 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { AppState } from './interfaces/index';
 import {
-    codeRecordsSlice,
-    counterSlice,
-    searchTextSlice,
+    codeRecordsReducer,
+    counterReducer,
+    searchTextReducer,
 } from './slices/index';
 
 export const initialState: AppState = {
@@ -18,10 +18,6 @@ export const initialState: AppState = {
     ],
 };
 
-const counterReducer = counterSlice.reducer;
-const searchTextReducer = searchTextSlice.reducer;
-const codeRecordsReducer = codeRecordsSlice.reducer;
-
 const rootReducer = combineReducers({
     counter: counterReducer,
     searchText: searchTextReducer,
@@ -35,6 +31,4 @@ const store = configureStore({
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
-export const { increment, decrement } = counterSlice.actions;
-export const { add, remove, update } = codeRecordsSlice.actions;
 export default store;

@@ -8,3 +8,5 @@ export const searchTextSlice = createSlice({
         onTextChange: (state, action) => action.payload,
     },
 });
+
+export const searchTextReducer = searchTextSlice.reducer;
