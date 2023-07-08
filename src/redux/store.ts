@@ -13,7 +13,58 @@ interface AppState {
 const initialState: AppState = {
     counter: 0,
     searchText: '',
-    codeRecords: [],
+    codeRecords: [
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+        {
+            id: '0',
+            label: 'Test',
+            code: 'document.querySelector()',
+        },
+    ],
     // Add other initial state properties here
 };
 
